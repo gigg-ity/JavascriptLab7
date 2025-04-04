@@ -1,8 +1,15 @@
+// Hover Event
+const hoverButton = document.getElementById('hoverButton');
+const hoverMessage = document.getElementById('hoverMessage');
 
+hoverButton.onmouseover = function(){
+    hoverMessage.textContent = "You are hovered over this message!";
 
-codument.addEventListener('keydown', function(event){
-    console.log(`Key pressed: ${event.key}`);
-    if (event.key === 'Escape'){
-        console.log('Escape Key was pressed.');
-    }
-})
+};
+
+hoverButton.onmouseout = function(){
+    hoverMessage.textContent = "";
+
+};
+
+//Focus Event
