@@ -36,3 +36,11 @@ focusInput.onfocus = function(){
 focusInput.onblur = function(){
     focusMsg = "Not focused";
 };
+
+const eventDele = document.getElementById('delegationButton');
+const clickMessage = document.getElementById('clickMessage');
+
+buttonContainer.addEventListener('click', function(event){
+    if(event.target.tagName === 'button'){
+        alert('You clicked: ' + event.target.textContent);
+    });
