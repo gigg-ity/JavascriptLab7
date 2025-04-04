@@ -12,4 +12,10 @@ hoverButton.onmouseout = function(){
 
 };
 
-//Focus Event
+//Keyboard Event
+const keyboardInput = document.getElementById('key');
+const keyDisplay = document.getElementById('keyDisplay');
+
+keyboardInput.addEventListener('keyup', function(a){
+    keyDisplay.textContent = a.key;
+});
