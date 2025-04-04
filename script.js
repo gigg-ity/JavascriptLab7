@@ -26,3 +26,13 @@ form.onsubmit = function(a){
     a.preventDefault();
     formMessage.textContent = "Form submitted";
 };
+const focusInput = document.getElementById('focusInput');
+const focusMsg = document.getElementById('focusMsg');
+
+focusInput.onfocus = function(){
+    focusMsg.textContent = "Input focused";
+
+};
+focusInput.onblur = function(){
+    focusMsg = "Not focused";
+};
