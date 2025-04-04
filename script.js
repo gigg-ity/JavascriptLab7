@@ -41,6 +41,12 @@ const eventDele = document.getElementById('delegationButton');
 const clickMessage = document.getElementById('clickMessage');
 
 buttonContainer.addEventListener('click', function(event){
-    if(event.target.tagName === 'button'){
-        alert('You clicked: ' + event.target.textContent);
+    if(event.target.classList.contains(delegationButton)){
+        clickMessage.textContent = "Message Clicked" + event.target.textContent;}
     });
+
+   /*  eventDele.addEventListener('click', function(event) {
+        // Check if the clicked element is a list item
+        if (event.target.tagName === 'button') {
+            alert('You clicked: ' + event.target.textContent);}
+        }); */
